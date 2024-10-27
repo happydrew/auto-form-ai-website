@@ -1,5 +1,6 @@
 import path from 'node:path'
 import nextra from 'nextra'
+import { output } from 'framer-motion/client'
 
 const withNextra = nextra({
   theme: 'nextra-theme-docs',
@@ -16,6 +17,13 @@ const sep = path.sep === '/' ? '/' : '\\\\'
 const ALLOWED_SVG_REGEX = new RegExp(`components${sep}icons${sep}.+\\.svg$`)
 
 export default withNextra({
+  // output: "export",
+  images: {
+    unoptimized: true, // 禁用图片优化（GitHub Pages 不支持）
+    // loader: "custom",
+    // imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    // deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+  },
   reactStrictMode: true,
   eslint: {
     // ESLint behaves weirdly in this monorepo.
