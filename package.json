@@ -29,5 +29,8 @@
   "browserslist": [
     ">= .25%",
     "not dead"
-  ]
+  ],
+  "engines": {
+    "node": ">=18.18.0"
+  }
 }
