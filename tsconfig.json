@@ -1,22 +1,27 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "target": "es6",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
-    "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "incremental": true,
     "esModuleInterop": true,
     "isolatedModules": true,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "jsx": "preserve",
     "module": "esnext",
     "resolveJsonModule": true,
     "paths": {
-      "@components/*": ["components/*"]
+      "@components/*": [
+        "components/*"
+      ]
     },
     "plugins": [
       {
@@ -25,6 +30,14 @@
     ],
     "strictNullChecks": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "pages/tags/[slug].mdx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

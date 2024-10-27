@@ -11,12 +11,12 @@ export default {
     type: 'page',
     title: 'Documentation'
   },
-  tags: {
-    display: "children",
-    theme: {
-      layout: "raw",
-    },
-  },
+  // tags: {
+  //   display: "children",
+  //   theme: {
+  //     layout: "raw",
+  //   },
+  // },
   blog: {
     type: "page",
     title: "Blog",
