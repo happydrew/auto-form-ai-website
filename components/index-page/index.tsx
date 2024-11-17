@@ -1,79 +1,39 @@
-import { Feature, Features } from '@components/features'
-import { ArrowRightIcon, ChromeIcon } from '@components/icons'
-import cn from 'clsx'
-import { motion } from 'framer-motion'
-import Image from 'next/image'
-import { Link } from 'nextra-theme-docs'
-import docsCardDark from 'public/assets/card-1.dark.png'
-import docsCard from 'public/assets/card-1.png'
-import { useState } from 'react'
-import styles from './index.module.css'
 import SocailProof from './SocialProof'
-
-const LANGUAGES = [
-  { lang: 'en', name: 'English' },
-  { lang: 'de', name: 'Deutsch' },
-  { lang: 'ja', name: '日本語' }
-]
-
-function I18n() {
-  const [active, setActive] = useState('')
-
-  return (
-    <div className={styles.comparison}>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '.5rem' }}>
-        {LANGUAGES.map(({ lang }) => (
-          <span
-            key={lang}
-            onPointerOver={() => setActive(lang)}
-            className={cn(styles.file, active === lang && styles.active)}
-          >
-            /{lang}/hello.mdx
-          </span>
-        ))}
-      </div>
-      <ArrowRightIcon width="1.2em" />
-      <div className="overflow-auto rounded-md bg-white py-1 text-sm shadow-lg ring-1 ring-black/5 dark:bg-neutral-800 dark:ring-white/20">
-        {LANGUAGES.map(({ lang, name }) => (
-          <div
-            key={lang}
-            onPointerOver={() => setActive(lang)}
-            // eslint-disable-next-line tailwindcss/no-custom-classname -- TODO: configure eslint-plugin-tailwindcss to import nextra-theme-docs styles so below classes could be removed
-            className={cn(
-              'relative cursor-default select-none whitespace-nowrap px-4 py-1.5',
-              active === lang
-                ? '_text-primary-600 _bg-primary-50 dark:_bg-primary-500/10'
-                : 'text-gray-800 dark:text-gray-100 '
-            )}
-          >
-            {name}
-          </div>
-        ))}
-      </div>
-    </div>
-  )
-}
+import Feature from './Feature'
+import CallToAction from './CallToAction'
+import GetExtensionButton from './GetExtensionButton'
+import Testimonials from './Testimonials'
+import FAQ from './FAQ'
 
 export const IndexPage = () => (
-  <div className="home-content">
+  <div>
     <div className="content-container">
       <h1 className="headline">
         One Click to Fill Forms <br className="sm:block hidden" />
         Powered by AI
       </h1>
-      <p className="subtitle">
-        A simple and powerful browser extension that automates web form filling
+      <p className="subtitle mt-6 leading-7 max-[720px]:text-[0.9rem]">
+        A simple and powerful browser extension that automates web form filling,
         <br className="max-md:hidden" />
-        freeing you from the tedious task of manual entry.
+        freeing you from tedious task of manual entry.
       </p>
-      <p className="subtitle">
-        <Link className={styles.cta} href="/">
-          Get Chrome Extension
-          <ChromeIcon className="inline-block ml-2 w-8 h-8" />
-        </Link>
-      </p>
+      <div className='mt-8 mb-4'>
+        <GetExtensionButton />
+      </div>
     </div>
+
     <SocailProof />
+
+    <div className='flex flex-col items-center justify-center w-full'>
+      <Feature id='Features' />
+
+      <Testimonials id='Testimonials' />
+
+      <FAQ id='FAQ' />
+
+      <CallToAction />
+    </div>
+
     <style jsx>{`
       .content-container {
         max-width: 90rem;

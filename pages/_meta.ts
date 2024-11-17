@@ -7,6 +7,14 @@ export default {
       layout: 'raw'
     }
   },
+  'promo-tile': {
+    type: 'page',
+    title: 'Promo Tile',
+    display: 'hidden',
+    theme: {
+      layout: 'raw'
+    }
+  },
   docs: {
     type: 'page',
     title: 'Documentation'
