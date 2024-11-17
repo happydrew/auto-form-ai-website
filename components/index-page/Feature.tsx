@@ -59,7 +59,7 @@ const Feature = ({
           <div
             key={feature.title}
             className={`
-              flex flex-col items-center text-center px-8 py-6 border-b
+              flex flex-col items-center text-center px-8 py-6 border-b dark:border-zinc-700
               ${index === 0 ? "md:border-r" : ""}
               ${index === 1 ? "lg:border-r" : ""}
               ${index === 2 ? "md:border-r lg:border-r-0" : ""}

@@ -167,6 +167,7 @@ function Footer() {
 }
 
 const config: DocsThemeConfig = {
+  darkMode: true,
   // banner: {
   //   key: '3.0-release',
   //   content: (
