@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const CallToAction = () => {
     return (
-        <section className="text-zinc-900 py-8 sm:py-16 max-w-[88%]">
+        <section className="text-zinc-900 pb-8 sm:pb-16 max-w-[88%]">
             <div className="max-w-screen-xl mx-auto px-6 lg:px-16 w-full">
                 <div className="mb-8">
                     <Image src='/assets/images/okhand.png' alt="Okhand Icon" width={64} height={64} className="mx-auto mb-4" />

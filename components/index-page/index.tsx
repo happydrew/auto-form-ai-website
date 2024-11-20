@@ -6,33 +6,44 @@ import Testimonials from './Testimonials'
 import FAQ from './FAQ'
 
 export const IndexPage = () => (
-  <div>
-    <div className="content-container">
-      <h1 className="headline">
-        One Click to Fill Forms <br className="sm:block hidden" />
-        Powered by AI
-      </h1>
-      <p className="subtitle mt-6 leading-7 max-[720px]:text-[0.9rem]">
-        A simple and powerful browser extension that automates web form filling,
-        <br className="max-md:hidden" />
-        freeing you from tedious task of manual entry.
-      </p>
-      <div className='mt-8 mb-4'>
-        <GetExtensionButton />
+  <div className='flex flex-col items-center justify-center w-full gap-[3.75rem]'>
+    <div id='hero' className='flex md:flex-row flex-col items-center justify-center w-full mt-10'>
+      <div className="content-container md:w-[50%] w-[90%]">
+        <h1 className="headline">
+          One Click to Fill Forms <br className="sm:block hidden" />
+          Powered by AI
+        </h1>
+        <p className="subtitle mt-6 leading-7 max-[720px]:text-[0.9rem]">
+          A simple and powerful browser extension that automates web form filling,
+          <br className="max-md:hidden" />
+          freeing you from tedious task of manual entry.
+        </p>
+        <div className='mt-8 mb-4'>
+          <GetExtensionButton />
+        </div>
+      </div>
+      <div id='hero-video' className='w-[40%] flex justify-start items-center'>
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className='w-[35rem] object-cover mt-10 rounded-2xl'
+        >
+          <source src='/assets/videos/hero_video.mp4' type='video/mp4' />
+        </video>
       </div>
     </div>
 
     <SocailProof />
 
-    <div className='flex flex-col items-center justify-center w-full'>
-      <Feature id='Features' />
+    <Feature id='Features' />
 
-      <Testimonials id='Testimonials' />
+    <Testimonials id='Testimonials' />
 
-      <FAQ id='FAQ' />
+    <FAQ id='FAQ' />
 
-      <CallToAction />
-    </div>
+    <CallToAction />
 
     <style jsx>{`
       .content-container {
