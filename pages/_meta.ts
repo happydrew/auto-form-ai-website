@@ -34,6 +34,13 @@ export default {
       timestamp: false,
     }
   },
+  concat: {
+    type: 'page',
+    title: 'Concat',
+    theme: {
+      layout: 'raw'
+    }
+  },
   404: {
     type: 'page',
     theme: {
