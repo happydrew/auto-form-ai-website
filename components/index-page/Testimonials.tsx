@@ -6,58 +6,52 @@ import { RoughNotation } from "react-rough-notation";
 
 const TestimonialsData = [
   {
-    user: {
-      name: "Alex P.",
-      username: "Independent Developer",
-      image: "/assets/users/6.jpg",
+    "user": {
+      "name": "Alex P.",
+      "username": "Independent Developer",
+      "image": "/assets/users/6.jpg"
     },
-    content:
-      "Submitting my apps to directory sites used to be a repetitive task that ate up valuable time. AutoFormAI has simplified the process by auto-filling forms accurately. Now, I can focus on building and launching my products without the administrative hassle.",
+    "content": "Directory submissions used to suck the life out of me—hours wasted copying and pasting the same info over and over. AutoFormAI handles it all in seconds. It's like hiring a super-efficient assistant that never complains. More time for coding, less for tedium."
   },
   {
-    user: {
-      name: "Mike W.",
-      username: "Sales Executive",
-      image: "/assets/users/1.jpg",
+    "user": {
+      "name": "Mike W.",
+      "username": "Sales Executive",
+      "image": "/assets/users/1.jpg"
     },
-    content:
-      "Recording customer details into Salesforce was always a time drain. With AutoFormAI, I can now input client information swiftly and correctly, freeing up more time to engage with clients and close more deals. It’s been a huge productivity booster for our sales team.",
+    "content": "Updating Salesforce used to feel like quicksand, pulling me away from what matters: selling. With AutoFormAI, everything’s entered flawlessly in seconds. My productivity shot through the roof. Honestly, I don’t know how we managed before."
   },
   {
-    user: {
-      name: "James L.",
-      username: "Job Seeker",
-      image: "/assets/users/2.jpg",
+    "user": {
+      "name": "James L.",
+      "username": "Job Seeker",
+      "image": "/assets/users/2.jpg"
     },
-    content:
-      "AutoFormAI has transformed how I handle job applications and online forms. I used to dread filling out endless fields, but now it’s all done with a single click. It’s like having a personal assistant who never tires, saving me hours each week."
+    "content": "Job hunting sucks. AutoFormAI makes it suck less. Click, done. That’s awesome!"
   },
   {
-    user: {
-      name: "Emma S.",
-      username: "Freelance Designer",
-      image: "/assets/users/5.jpg",
+    "user": {
+      "name": "Emma S.",
+      "username": "Freelance Designer",
+      "image": "/assets/users/5.jpg"
     },
-    content:
-      "As a freelancer juggling client forms and contracts, AutoFormAI has been a game-changer. I can pull data from my stored library and complete forms instantly, without the hassle of copy-pasting. It streamlines my work and gives me more time for creative projects."
+    "content": "As a freelancer, I deal with tons of forms: contracts, invoices, client requests—you name it. AutoFormAI made all that frustration disappear. No more manual copy-pasting. It’s fast, efficient, and gives me hours back every week to focus on design. I honestly wish I’d found it sooner!"
   },
   {
-    user: {
-      name: "Dr. Mark H.",
-      username: "Healthcare Professional",
-      image: "/assets/users/4.jpg",
+    "user": {
+      "name": "Dr. Mark H.",
+      "username": "Healthcare Professional",
+      "image": "/assets/users/4.jpg"
     },
-    content:
-      "Managing patient intake forms used to be time-consuming and stressful. With AutoFormAI, I can now complete complex medical forms quickly and accurately. This tool has allowed me to focus more on patient care and less on paperwork."
+    "content": "Patient paperwork used to pile up on my desk, eating into my time with actual patients. AutoFormAI has been a lifesaver—what used to take hours now gets done in minutes, and I can focus on providing care instead of dealing with forms."
   },
   {
-    user: {
-      name: "Rachel T.",
-      username: "Operations Manager",
-      image: "/assets/users/3.jpg",
+    "user": {
+      "name": "Rachel T.",
+      "username": "Operations Manager",
+      "image": "/assets/users/3.jpg"
     },
-    content:
-      "AutoFormAI has been invaluable for my team. From onboarding new clients to filling out compliance documents, it’s quick, reliable, and makes our workflow much more efficient. We’ve seen a significant reduction in manual errors, and I can’t imagine going back to the old way of doing things."
+    "content": "AutoFormAI streamlined our entire workflow. Compliance forms, client onboarding, tedious admin tasks—it’s all so much faster now. Our team works smarter, not harder. Can’t imagine managing without it anymore."
   }
 ];
 
@@ -87,7 +81,7 @@ const Testimonials = ({ id }: { id: string }) => {
           . I will display your tweet and recommendation here.
         </p>
       </div>
-      <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4 overflow-hidden relative transition-all">
+      <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 overflow-hidden relative transition-all">
         {TestimonialsData.map((testimonial, index) => (
           <div className="mb-4 z-0 break-inside-avoid-column" key={index}>
             <div className="border border-slate/10 dark:border-zinc-700 rounded-lg p-4 flex flex-col items-start gap-3 h-fit">
@@ -112,7 +106,7 @@ const Testimonials = ({ id }: { id: string }) => {
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                 >
-                  <TwitterIcon className="w-8 h-8" />
+                  {/* <TwitterIcon className="w-8 h-8" /> */}
                 </Link>
               </div>
               <p className="dark:text-zinc-200 text-[14px]">

@@ -10,8 +10,11 @@ export const IndexPage = () => (
     <div id='hero' className='flex md:flex-row flex-col items-center justify-center w-full mt-10'>
       <div className="content-container md:w-[50%] w-[90%]">
         <h1 className="headline">
-          One Click to Fill Forms <br className="sm:block hidden" />
-          Powered by AI
+          Fill Forms in{' '}
+          <br className="sm:hidden block" />
+          <span className='bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent bg-clip-text font-bold animate-text'>
+            One Click
+          </span>
         </h1>
         <p className="subtitle mt-6 leading-7 max-[720px]:text-[0.9rem]">
           A simple and powerful browser extension that automates web form filling,
@@ -22,7 +25,7 @@ export const IndexPage = () => (
           <GetExtensionButton />
         </div>
       </div>
-      <div id='hero-video' className='w-[40%] flex justify-start items-center'>
+      <div id='hero-video' className='w-[80%] md:w-[40%] flex justify-start items-center'>
         <video
           autoPlay
           muted
@@ -66,7 +69,6 @@ export const IndexPage = () => (
         border-bottom: 1px solid rgb(38, 38, 38);
       }
       .headline {
-        display: inline-flex;
         font-size: 3.125rem;
         font-size: min(4.375rem, max(8vw, 2.5rem));
         font-weight: 700;
