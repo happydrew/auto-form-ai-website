@@ -78,7 +78,7 @@ const FAQ = ({
         className="gap-3"
         itemClasses={{
           base: "px-6 !bg-[#f4f4f5] !shadow-none hover:!bg-[#ededed] rounded-2xl dark:!bg-[#252526] dark:!text-white dark:hover:!bg-[#1e1e1e]",
-          title: "font-medium mb-2",
+          title: "text-left font-medium mb-2",
           trigger: "py-6 focus:outline-none flex justify-between items-center",
           content: "pt-0 pb-6 text-base text-gray-500 dark:text-gray-400",
         }}
