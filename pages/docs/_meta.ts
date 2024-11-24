@@ -5,6 +5,5 @@ export default {
     type: "separator",
     title: "About",
   },
-  "privacy-policy": "Privacy Policy",
-  "contact-us": "Contact Us"
+  "privacy-policy": "Privacy Policy"
 }

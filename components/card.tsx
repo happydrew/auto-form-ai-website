@@ -21,7 +21,7 @@ export function Card({
           "hover:!border-primary hover:dark:bg-neutral-700/50 hover:shadow-2xl hover:shadow-primary/10",
           "dark:shadow-none transition-colors",
         ],
-        className,
+        className
       )}
       {...((props as any).href?.startsWith("https://") && {
         target: "_blank",

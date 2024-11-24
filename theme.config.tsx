@@ -52,7 +52,8 @@ function Footer() {
           title="Document"
           url="/docs"
           items={[
-            { title: "Introduction", url: "/docs/introduction" }
+            { title: "Introduction", url: "/docs/introduction" },
+            { title: "Get Started", url: "/docs/get-started" }
           ]}
         />
         {/* <List
@@ -96,7 +97,7 @@ function Footer() {
         <List
           title="About"
           items={[
-            { title: "Contact", url: "/docs/contact-us/" },
+            { title: "Concat", url: "/concat" },
             { title: "Privacy Policy", url: "https://autoformai.floxai.top/docs/privacy-policy/" },
           ]}
         />

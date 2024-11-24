@@ -47,7 +47,7 @@ export default function Blog() {
           key={page.route}
           as={Link}
           href={page.route}
-          className="flex flex-col"
+          className={`flex flex-col`}
         >
           <div className="gap-2 flex mb-7">
             {page.frontMatter.tags.map(tag => (
