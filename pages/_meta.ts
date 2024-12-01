@@ -25,6 +25,12 @@ export default {
   //     layout: "raw",
   //   },
   // },
+  tags: {
+    display: "children",
+    theme: {
+      layout: "raw",
+    },
+  },
   blog: {
     type: "page",
     title: "Blog",

@@ -1,6 +1,5 @@
 import path from 'node:path'
 import nextra from 'nextra'
-import { output } from 'framer-motion/client'
 
 const withNextra = nextra({
   theme: 'nextra-theme-docs',

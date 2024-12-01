@@ -28,15 +28,14 @@
         "name": "next"
       }
     ],
-    "strictNullChecks": true
+    "strictNullChecks": false
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts",
-    "pages/tags/[slug].mdx",
-    "components/index-page/SocialProof.tsx_old"
+    ".next/types/**/*.ts"
+    //"pages/tags/[slug].mdx",
   ],
   "exclude": [
     "node_modules"

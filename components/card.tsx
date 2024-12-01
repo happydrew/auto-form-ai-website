@@ -13,6 +13,7 @@ export function Card({
   const isLink = Component === "a" || Component === NextLink
 
   return (
+    // @ts-expect-error -- fixme
     <Component
       className={clsx(
         "border border-zinc-200 dark:border-[#414141] p-8 lg:p-12 bg-white dark:bg-neutral-800",

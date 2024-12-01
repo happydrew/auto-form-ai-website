@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }: AppProps): ReactElement {
   }, [])
   return (<>
     {/* Google Tag Manager */}
-    {/* <Script
+    <Script
       src="https://www.googletagmanager.com/gtag/js?id=G-3VWXBTY79Z"
       strategy="afterInteractive"
     />
@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }: AppProps): ReactElement {
         gtag('js', new Date());
         gtag('config', 'G-3VWXBTY79Z');
     `}
-    </Script> */}
+    </Script>
 
     <Component {...pageProps} />
   </>)

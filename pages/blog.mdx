@@ -45,7 +45,7 @@ export default function Blog() {
       (!currentTag || page.frontMatter.tags.includes(currentTag)) && (
         <Card
           key={page.route}
-          as={Link}
+          as={NextLink}
           href={page.route}
           className={`flex flex-col`}
         >
