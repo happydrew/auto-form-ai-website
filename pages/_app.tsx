@@ -1,6 +1,7 @@
 import type { AppProps } from 'next/app'
 import { useEffect, type ReactElement } from 'react'
-import Script from 'next/script'
+import Script from 'next/script';
+import Head from 'next/head';
 import '../style.css';
 
 export default function App({ Component, pageProps }: AppProps): ReactElement {
@@ -8,6 +9,9 @@ export default function App({ Component, pageProps }: AppProps): ReactElement {
     document.documentElement.classList.add('dark')
   }, [])
   return (<>
+    <Head>
+      <meta name="saashub-verification" content="zm6rcf35ll2n" />
+    </Head>
     {/* Google Tag Manager */}
     <Script
       src="https://www.googletagmanager.com/gtag/js?id=G-3VWXBTY79Z"
